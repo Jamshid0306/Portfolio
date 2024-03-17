@@ -1,0 +1,60 @@
+nav {
+    background: #000;
+    border-radius: 50px;
+    background: transparent;
+    height: 100px;
+    padding: 25px 17px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.nav__items {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.logo-txt{
+    font-family: 'madimi';
+    font-size: 40px;
+}
+
+.nav__item{
+    font-family: "ahtiti";
+    text-transform: uppercase;
+    font-size: 24px;
+}
+
+.nav__btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 55px;
+    border-radius: 50px;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 24px;
+    background: #000;
+    border: none;
+    opacity: 0.8;
+    cursor: pointer;
+    transition: 0.4s;
+    &:hover{
+        opacity: 1;
+        box-shadow: 0 0 10px #fff;
+    }
+}
+
+.nav-header{
+    padding-top: 55px;
+    
+}
