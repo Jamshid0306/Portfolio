@@ -1,8 +1,8 @@
 <script setup>
 
 import Nav from '@/components/navbar/Nav.vue'
-
-import { IconDownload, GithubIcon, InstagramIcon, LinkedinIcon, FigmaIcon } from "@/helpers/icon"
+import DownloadButton from '@/components/UI/DownloadButton.vue'
+import { GithubIcon, InstagramIcon, LinkedinIcon, FigmaIcon } from "@/helpers/icon"
 
 </script>
 
@@ -14,18 +14,26 @@ import { IconDownload, GithubIcon, InstagramIcon, LinkedinIcon, FigmaIcon } from
             </div>
             <div class="blocks">
                 <div class="block">
-                    <h2 class="name">Jamshid</h2>
-                    <h5 class="about__me">I'm front-end web developer</h5>
-                    <button class="download__btn">
-                        <IconDownload :size="40" :color="'white'" />
-                        <h4 class="download__btn">cv</h4>
-                    </button>
+                    <div class="block__title">
+                        <h2 class="name">Jamshid Abdukarimov</h2>
+                        <div class="block__title-btn">
+                            <h5 class="about__me">I'm a front-end web developer</h5>
+                            
+                            
+                            <DownloadButton :text="'cv'"/>
+
+                            
+                            
+                            
+                            
+                        </div>
+                    </div>
                 </div>
                 <div class="links">
-                    <GithubIcon :size="40" :color="'black'"/>
-                    <InstagramIcon :size="40" :color="'black'"/>
-                    <LinkedinIcon :size="40" :color="'black'"/>
-                    <FigmaIcon :size="40" :color="'black'"/>
+                    <GithubIcon :size="40" :color="'black'" />
+                    <InstagramIcon :size="40" :color="'black'" />
+                    <LinkedinIcon :size="40" :color="'black'" />
+                    <FigmaIcon :size="40" :color="'black'" />
                 </div>
             </div>
         </div>
