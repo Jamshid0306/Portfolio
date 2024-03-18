@@ -18,22 +18,15 @@ import { GithubIcon, InstagramIcon, LinkedinIcon, FigmaIcon } from "@/helpers/ic
                         <h2 class="name">Jamshid Abdukarimov</h2>
                         <div class="block__title-btn">
                             <h5 class="about__me">I'm a front-end web developer</h5>
-                            
-                            
                             <DownloadButton :text="'cv'"/>
-
-                            
-                            
-                            
-                            
                         </div>
                     </div>
                 </div>
                 <div class="links">
-                    <GithubIcon :size="40" :color="'black'" />
-                    <InstagramIcon :size="40" :color="'black'" />
-                    <LinkedinIcon :size="40" :color="'black'" />
-                    <FigmaIcon :size="40" :color="'black'" />
+                    <GithubIcon class="link" :size="70" :color="'black'" />
+                    <InstagramIcon class="link" :size="70" :color="'black'" />
+                    <LinkedinIcon class="link" :size="70" :color="'black'" />
+                    <FigmaIcon class="link" :size="70" :color="'black'" />
                 </div>
             </div>
         </div>
