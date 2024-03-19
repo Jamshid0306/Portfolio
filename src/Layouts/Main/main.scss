@@ -88,7 +88,9 @@
         }
     }
 }
-
+html{
+    scroll-behavior: smooth;
+}
 .project {
     background: url(@/assets/images/project-bg.svg) no-repeat center /cover;
     min-height: 1250px;
@@ -100,7 +102,6 @@
         font-family: 'ahtiti';
         text-transform: capitalize;
     }
-
     &__blocks {
         display: flex;
         flex-wrap: wrap;

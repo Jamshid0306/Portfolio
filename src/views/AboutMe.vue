@@ -7,9 +7,8 @@
 
 <template>
 
-    <section class="about">
+    <section class="about" id="scroll_about">
         <div class="container">
-
             <h2 class="about__title">About <br> me</h2>
             <div class="about__txts">
                 <p class="about__txt">Meet Jamshid , a talented web developer with a passion for crafting

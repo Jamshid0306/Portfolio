@@ -1,5 +1,5 @@
 <template>
-    <section class="project">
+    <section id="scroll_project" class="project">
         <div class="container">
             <h2 class="project__title">my projects</h2>
             <div class="project__blocks">

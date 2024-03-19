@@ -7,7 +7,7 @@ import { GithubIcon, InstagramIcon, LinkedinIcon, FigmaIcon } from "@/helpers/ic
 </script>
 
 <template>
-    <header class="header">
+    <header class="header" id="scroll_home">
         <div class="container">
             <div class="nav-header">
                 <Nav />

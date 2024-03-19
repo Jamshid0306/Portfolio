@@ -1,5 +1,5 @@
 <template>
-    <section class="contact">
+    <section class="contact" id="scroll_contact">
         <div class="container">
             <h2 class="contact__title">contact me</h2>
             <form class="form">

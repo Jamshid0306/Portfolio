@@ -1,7 +1,5 @@
 <script setup>
 import { IconDownload } from '@/helpers/icon';
-
-
 const props = defineProps({
     text: String,
 })
