@@ -92,7 +92,6 @@ import { SkillsOnIcon, SkillsOffIcon } from '@/helpers/icon';
                             <SkillsOnIcon />
                             <SkillsOnIcon />
                             <SkillsOnIcon />
-                            <SkillsOffIcon />
                         </div>
                     </div>
                     <div class="block">
