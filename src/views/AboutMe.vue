@@ -21,7 +21,7 @@
                     they undertake is not only visually stunning but
                     also optimizedfor peak performance.</p>
                 <div class="about__btn-in">
-                    <button class="nav__btn about__btn">contact me</button>
+                    
                 </div>
             </div>
         </div>

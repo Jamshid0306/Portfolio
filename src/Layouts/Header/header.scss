@@ -23,6 +23,14 @@
     color: #fff;
     line-height: 140px;
     font-family: 'ahtiti';
+    @media screen and (max-width: 1024px) {
+        font-size: 100px;
+    }
+    @media screen and (max-width: 768px) {
+        text-align: center;
+        font-size: 50px;
+        line-height: 50px;
+    }
 }
 
 .block__title {
@@ -55,6 +63,7 @@
     display: flex;
     flex-direction: column;
     gap: 25px;
+
 }
 
 .link{

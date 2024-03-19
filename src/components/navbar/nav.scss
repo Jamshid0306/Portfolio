@@ -1,50 +1,173 @@
 nav {
     position: fixed;
     background: #000;
-    // width: 100%;
+    max-width: 1800px;
+    width: 100%;
     border-radius: 50px;
     background: transparent;
-    height: 100px;
+    min-height: 100px;
     padding: 25px 17px;
     color: #fff;
     display: flex;
+    transform: translate(50%);
+    right: 50%;
     align-items: center;
     justify-content: space-between;
     background: rgb(82, 38, 183);
     gap: 200px;
     z-index: 9;
+
 }
 
-.logo{
+.logo {
     display: flex;
     align-items: center;
     gap: 60px;
+
 }
 
 .nav__items {
     display: flex;
     align-items: center;
     gap: 50px;
+
+    @media screen and (max-width: 1024px) {
+        display: none;
+    }
+
+    &2 {
+        transform: scale(0);
+        transition: 0.4s;
+
+        @media screen and (max-width: 1024px) {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            right: 10%;
+            gap: 10px;
+            border-radius: 10px;
+            background: #fff;
+
+            top: 110%;
+
+            .nav__item a {
+                color: #000;
+                padding: 10px;
+            }
+        }
+
+        &.active {
+            transform: scale(1);
+        }
+    }
 }
 
-.logo-txt{
+.nav__burger {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    border-radius: 12px;
+    transition: 1s;
+    transform: scale(0);
+    @media screen and (max-width: 1024px) {
+        transform: scale(1);
+    }
+
+    &-btn {
+        display: block;
+        width: 50px;
+        height: 30px;
+        position: relative;
+        z-index: 1;
+
+        @media screen and (max-width:480px) {
+            width: 35px;
+            height: 20px;
+        }
+
+        span {
+            position: absolute;
+            background-color: #fff;
+            width: 100%;
+            height: 2px;
+            left: 0;
+            top: 13px;
+
+            @media screen and (max-width:480px) {
+                top: 9px;
+            }
+        }
+    }
+
+    &-btn::before,
+    &-btn::after {
+        content: "";
+        position: absolute;
+        background-color: #fff;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        transition: 0.5s;
+    }
+
+    &-btn::before {
+        top: 0;
+    }
+
+    &-btn::after {
+        bottom: 0;
+    }
+
+    &-btn.activeburger::before {
+        transform: rotate(45deg);
+        top: 13px;
+
+        @media screen and (max-width:480px) {
+            top: 9px;
+        }
+
+    }
+
+    &-btn.activeburger::after {
+        transform: rotate(-45deg);
+        top: 13px;
+
+        @media screen and (max-width:480px) {
+            top: 9px;
+        }
+    }
+
+    &-btn.activeburger {
+        span {
+            display: none;
+        }
+    }
+}
+
+
+
+.logo-txt {
     font-family: 'madimi';
     font-size: 40px;
 }
 
-.nav__item{
+.nav__item {
     font-family: "ahtiti";
     text-transform: uppercase;
     font-size: 24px;
 }
 
-.nav__btn{
+.nav__btn {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 200px;
     height: 55px;
     border-radius: 50px;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
     color: #fff;
     text-transform: capitalize;
     font-size: 24px;
@@ -53,13 +176,18 @@ nav {
     opacity: 0.8;
     cursor: pointer;
     transition: 0.4s;
-    &:hover{
+
+    &:hover {
         opacity: 1;
         box-shadow: 0 0 10px #fff;
     }
+
+    @media screen and (max-width: 1024px) {
+        display: none;
+    }
 }
 
-.nav-header{
+.nav-header {
     padding-top: 55px;
-    
+
 }
