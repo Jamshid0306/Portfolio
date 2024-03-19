@@ -9,16 +9,14 @@ const props = defineProps({
 </script>
 
 <template>
-    <button class="download__btn">
-        <!-- <div class="downlaod__txt"> -->
+    <a href="/" download="portfolio.pdf" class="download__btn">
             <IconDownload :size="40" :color="'white'" />
             <h4 class="download__btn-txt">
                 <slot />{{ text }}
             </h4>
-        <!-- </div> -->
         <div class="download__btn-bg1"></div>
         <div class="download__btn-bg2"></div>
-    </button>
+    </a>
 
 
 </template>
